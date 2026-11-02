@@ -146,6 +146,14 @@ button,input,select,textarea{font:inherit}
 .intro:before{left:-105px;top:-140px}.intro:after{right:-120px;bottom:-180px;transform:rotate(-24deg)}
 .intro h2,.section-head h2,.dress h2,.venue-info h2{font-size:clamp(2.6rem,7vw,5.4rem);line-height:.94;margin:.25em 0}
 .intro p:last-child{max-width:760px;margin:24px auto 0;line-height:1.9;color:#6f6259;position:relative;z-index:1}
+.couple-story{background:#f8f2ea;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(36px,7vw,90px);align-items:center;overflow:hidden}
+.couple-photo-wrap{position:relative;max-width:700px;margin:auto;padding:0 7% 7% 0}
+.couple-main{width:100%;display:block;border-radius:26px;object-fit:cover;box-shadow:0 26px 60px rgba(55,34,27,.17)}
+.couple-polaroid{position:absolute;width:min(38%,245px);right:0;bottom:0;margin:0;background:#fff;padding:9px 9px 34px;transform:rotate(5deg);box-shadow:0 18px 38px rgba(45,28,21,.24)}
+.couple-polaroid img{width:100%;display:block}
+.couple-polaroid figcaption{text-align:center;margin-top:8px;font:italic .78rem Georgia,serif;color:#74665e}
+.couple-copy h2{font-size:clamp(2.8rem,7vw,5.2rem);line-height:.95;margin:.25em 0}
+.couple-copy p{color:#766a61;line-height:1.85;max-width:560px}
 
 .dark{background:#221916;color:var(--cream);position:relative;overflow:hidden}
 .dark:after{
@@ -243,7 +251,8 @@ footer strong{display:block;font:2.7rem Georgia,serif;margin-bottom:8px;color:#f
 footer .date{display:block;margin-top:10px;letter-spacing:.18em;font-size:.72rem;text-transform:uppercase}
 
 @media(max-width:800px){
-  .links{display:none}.dress,.venue,.rsvp-grid{grid-template-columns:1fr}.mood{grid-template-columns:1fr}
+  .links{display:none}.dress,.venue,.rsvp-grid,.couple-story{grid-template-columns:1fr}.mood{grid-template-columns:1fr}
+  .couple-photo-wrap{max-width:620px;padding-right:8%;padding-bottom:10%}
   .venue-visual{min-height:410px}.faq{grid-template-columns:1fr}.envelope{height:315px}
 }
 @media(max-width:560px){
@@ -306,6 +315,21 @@ footer .date{display:block;margin-top:10px;letter-spacing:.18em;font-size:.72rem
     <p class="eyebrow" style="color:var(--burg)">дорогие родные и друзья</p>
     <h2>Приглашаем вас прожить этот день вместе с нами</h2>
     <p>Лесная площадка, выездная церемония, живые цветы, высокие свечи, глубокое бордо и оливковые оттенки. Нам хочется создать не формальный банкет, а красивый, тёплый вечер с людьми, которые для нас важны.</p>
+  </section>
+
+  <section class="section couple-story" id="about">
+    <div class="couple-photo-wrap">
+      <img class="couple-main" src="assets/couple-studio.jpg" alt="Олег и Дарья" loading="eager">
+      <figure class="couple-polaroid">
+        <img src="assets/couple-polaroid.jpg" alt="Олег и Дарья вместе" loading="lazy">
+        <figcaption>Олег & Дарья</figcaption>
+      </figure>
+    </div>
+    <div class="couple-copy">
+      <p class="eyebrow" style="color:var(--burg)">Олег & Дарья</p>
+      <h2>До встречи в нашем самом важном дне</h2>
+      <p>24 июля 2027 года мы хотим собрать рядом людей, которые для нас важны. Будем счастливы разделить этот день с вами.</p>
+    </div>
   </section>
 
   <section class="section dark" id="program">
