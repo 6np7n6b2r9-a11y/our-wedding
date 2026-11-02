@@ -195,7 +195,7 @@ button,input,select,textarea{font:inherit}
   backdrop-filter:blur(5px);
 }
 .venue-visual:after{
-  content:"точная геометка уточняется";position:absolute;left:50%;bottom:9%;transform:translateX(-50%);
+  content:"53.467739, 49.390422";position:absolute;left:50%;bottom:9%;transform:translateX(-50%);
   color:#fff;font-size:.78rem;letter-spacing:.16em;white-space:nowrap
 }
 .venue-info{padding:clamp(55px,8vw,100px);align-self:center}
@@ -355,11 +355,14 @@ footer .date{display:block;margin-top:10px;letter-spacing:.18em;font-size:.72rem
     <div class="venue-info">
       <p class="eyebrow" style="color:var(--burg)">место встречи</p>
       <h2>Место нашей свадьбы</h2>
-      <p><strong>Точную точку прибытия сейчас уточняем.</strong> Как только добавим подтверждённую геометку, здесь появятся корректные кнопки навигации.</p>
-      <p><span class="btn map-btn" style="opacity:.55;cursor:not-allowed">Геометка уточняется</span></p>
+      <p>Координаты площадки: <strong>53.467739, 49.390422</strong>. Сохраните точку заранее — так в день свадьбы будет проще построить маршрут.</p>
+      <p>
+  <a class="btn map-btn" href="https://yandex.ru/maps/?pt=49.390422,53.467739&z=16&l=map" target="_blank" rel="noopener">Яндекс Карты</a>
+  <a class="btn map-btn alt" href="https://www.google.com/maps?q=53.467739,49.390422" target="_blank" rel="noopener">Google Maps</a>
+</p>
       <div class="facts">
         <div>🌲 Церемония и ужин на природе</div>
-        <div>📍 Точная геометка будет добавлена после подтверждения</div>
+        <div>📍 53.467739, 49.390422</div>
         <div>🚗 Ниже есть маршруты из Самары и Тольятти</div>
       </div>
     </div>
@@ -369,28 +372,28 @@ footer .date{display:block;margin-top:10px;letter-spacing:.18em;font-size:.72rem
     <div class="section-head">
       <p class="eyebrow" style="color:#b4b37c">как добраться</p>
       <h2>Маршрут до площадки</h2>
-      <p>Ниже — наглядная схема направления. Точную точку прибытия сейчас корректируем, чтобы гости не получили неверный маршрут.</p>
+      <p>Ниже — наглядная схема направления. Кнопки откроют точный автомобильный маршрут до места свадьбы.</p>
     </div>
     <div class="route-grid">
       <article class="route-card">
         <p class="eyebrow" style="color:#b4b37c">из Самары</p>
         <h3>Самара → свадьба</h3>
         <div class="route-track"><span class="route-node"></span><span class="route-line"></span><span class="route-node"></span></div>
-        <div class="route-labels"><span>Самара</span><span>точка прибытия уточняется</span></div>
+        <div class="route-labels"><span>Самара</span><span>53.467739, 49.390422</span></div>
         <p>Откройте карту — сервис построит актуальный автомобильный маршрут с учётом выбранной точки старта в Самаре.</p>
-        <span class="btn btn-light" style="opacity:.55;cursor:not-allowed">Маршрут уточняется</span>
+        <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&origin=Samara%2C+Russia&destination=53.467739%2C49.390422&travelmode=driving" target="_blank" rel="noopener">Построить маршрут</a>
       </article>
       <article class="route-card">
         <p class="eyebrow" style="color:#b4b37c">из Тольятти</p>
         <h3>Тольятти → свадьба</h3>
         <div class="route-track"><span class="route-node"></span><span class="route-line"></span><span class="route-node"></span></div>
-        <div class="route-labels"><span>Тольятти</span><span>точка прибытия уточняется</span></div>
+        <div class="route-labels"><span>Тольятти</span><span>53.467739, 49.390422</span></div>
         <p>Для гостей из Тольятти маршрут сразу строится до точки проведения свадьбы.</p>
-        <span class="btn btn-light" style="opacity:.55;cursor:not-allowed">Маршрут уточняется</span>
+        <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&origin=Tolyatti%2C+Russia&destination=53.467739%2C49.390422&travelmode=driving" target="_blank" rel="noopener">Построить маршрут</a>
       </article>
     </div>
     <div style="margin-top:18px;position:relative;z-index:1">
-      <span class="btn btn-ghost" style="margin-left:0;opacity:.55;cursor:not-allowed">Маршрут уточняется</span>
+      <a class="btn btn-ghost" style="margin-left:0" href="https://www.google.com/maps/dir/?api=1&destination=53.467739%2C49.390422&travelmode=driving&dir_action=navigate" target="_blank" rel="noopener">Еду из другого города / от моего местоположения</a>
     </div>
   </section>
 
