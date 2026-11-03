@@ -28,9 +28,7 @@ a{color:inherit}
 button,input,select,textarea{font:inherit}
 
 /* ENVELOPE INTRO */
-.envelope-scene{
-  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;
-  min-height:100svh;overflow:hidden;background:#17200e;
+.envelope-scene{\n  position:fixed;inset:0;z-index:9999;display:grid;place-items:center;\n  min-height:100svh;overflow:hidden;background:#16200f;
   transition:opacity .75s ease,visibility .75s ease,transform .9s cubic-bezier(.2,.75,.15,1);
 }
 .envelope-scene.gone{
@@ -42,8 +40,7 @@ button,input,select,textarea{font:inherit}
   aspect-ratio:750/1333;
   max-height:100svh;
 }
-.envelope-art{
-  position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;
+.envelope-art{\n  position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;object-position:center;
   user-select:none;-webkit-user-drag:none;
 }
 .envelope-hit{
@@ -246,7 +243,7 @@ footer .date{display:block;margin-top:10px;letter-spacing:.18em;font-size:.72rem
 
 <div class="envelope-scene" id="envelopeScene" aria-label="Открыть свадебное приглашение">
   <div class="envelope-art-frame">
-    <img class="envelope-art" src="assets/envelope-fallback.svg?v=20261103-3" alt="Олег и Дарья — свадебное приглашение" decoding="async" fetchpriority="high">
+    <img class="envelope-art" src="assets/envelope-approved.jpg?v=20261103-4" alt="Олег и Дарья — свадебное приглашение" decoding="async" fetchpriority="high">
     <button class="envelope-hit" id="openInvitation" aria-label="Открыть приглашение"></button>
   </div>
 </div>
